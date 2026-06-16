@@ -3,32 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arnav Batra — Software Engineer</title>
+<title>Arnav Batra</title>
 <meta name="description" content="Arnav Batra — CS / Data Science / Economics, UW–Madison. Data Analyst, Nexus digital transformation program, Siemens Energy.">
-<link rel="icon" href="data:,">
+<link rel="icon" type="image/jpeg" href="icon.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <noscript>
   <style>
-    #bootScreen { display: none !important; }
-    #heroFinal[hidden] { display: block !important; }
+    .reveal { opacity: 1 !important; transform: none !important; }
   </style>
 </noscript>
 </head>
 <body>
 
-<div class="scanline" aria-hidden="true"></div>
-
 <header class="topbar">
   <div class="topbar-inner">
-    <span class="prompt-tag">arnav@batra</span><span class="dim">:</span><span class="path">~</span><span class="dim">$</span>
+    <a href="#top" class="logo">AB</a>
     <nav class="topnav" aria-label="Sections">
-      <a href="#about">~/about</a>
-      <a href="#experience">~/experience</a>
-      <a href="#projects">~/projects</a>
-      <a href="#skills">~/skills</a>
-      <a href="#achievements">~/achievements</a>
-      <a href="#contact">~/contact</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
     </nav>
+    <a href="ArnavBatra_Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost btn-small">Resume</a>
   </div>
 </header>
 
@@ -36,225 +35,192 @@
 
   <!-- HERO -->
   <section class="hero" id="hero">
-    <div class="boot-screen" id="bootScreen" aria-live="polite">
-      <pre id="bootLines" class="boot-lines"></pre>
-    </div>
-
-    <div class="hero-final" id="heroFinal" hidden>
-      <p class="hero-line dim">Last login: <span id="loginTime"></span> on ttys001</p>
-      <h1 class="hero-name">Arnav Batra<span class="cursor">_</span></h1>
-      <p class="hero-title">Data Analyst, Integration Workstream — Nexus Program @ Siemens Energy</p>
-      <p class="hero-sub dim">CS / Data Science / Economics (Math Emphasis) — UW–Madison, May 2027</p>
-
-      <a class="scroll-hint" href="#about">↓ scroll to continue</a>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <h2 class="section-head"><span class="dim">~/</span>about<span class="cursor">_</span></h2>
-    <div class="section-body">
-      <p>
-        I'm a triple major in Computer Science, Data Science, and Economics (Math Emphasis) at
-        UW–Madison, graduating May 2027. I work at the intersection of analytics and
-        engineering — comfortable writing the pipeline and reading the spreadsheet it feeds.
-      </p>
-      <p>
-        Currently a <strong>Data Analyst on the Integration Workstream of the Nexus digital
-        transformation program</strong> at Siemens Energy (summer 2026), working across
-        SAP S/4HANA, Teamcenter PLM, and MES@SE — integration testing, documentation, and
-        reporting in Mendix and Tableau.
-      </p>
-      <p>
-        Before that, I was an IT Intern at Siemens Energy, where I shipped automation that
-        replaced manual tracking with measurable savings. Outside of work: competitive archery,
-        and a couple of side projects that scratch the data itch.
-      </p>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section class="section" id="experience">
-    <h2 class="section-head"><span class="dim">~/</span>experience<span class="cursor">_</span></h2>
-    <div class="section-body">
-
-      <article class="entry entry-current">
-        <div class="entry-head">
-          <h3>Data Analyst — Integration Workstream, Nexus Program</h3>
-          <span class="entry-meta dim">Siemens Energy · Summer 2026 · current</span>
-        </div>
-        <ul>
-          <li>Support integration testing and documentation across SAP S/4HANA, Teamcenter PLM, and MES@SE as part of the Nexus digital transformation program.</li>
-          <li>Build and maintain process documentation and low-code tooling in Mendix.</li>
-          <li>Develop reporting and analysis in Tableau for the integration workstream.</li>
-        </ul>
-      </article>
-
-      <article class="entry">
-        <div class="entry-head">
-          <h3>IT Intern</h3>
-          <span class="entry-meta dim">Siemens Energy · Jun 2025 – present (prior role)</span>
-        </div>
-        <ul>
-          <li>Built an automated reminder workflow in Power Automate for device returns from off-boarded employees; designed the accompanying HTML/CSS email templates.</li>
-          <li>Tracked 2,000+ non-compliant devices through the workflow; estimated ~$100K in recovered/avoided cost.</li>
-          <li>Built interactive Power BI dashboards analyzing 15,000+ IT tickets to surface resolution-time trends.</li>
-          <li>Automated weekly and monthly reporting, cutting manual reporting effort by 60%+ and improving SLA compliance.</li>
-          <li>Created SharePoint training sites and additional Power Automate workflows for the IT team.</li>
-        </ul>
-      </article>
-
-      <article class="entry">
-        <div class="entry-head">
-          <h3>Python Student Intern</h3>
-          <span class="entry-meta dim">InfoAxon Technologies · Jul 2022</span>
-        </div>
-        <ul>
-          <li>Automated social media scheduling, authentication, and content management against the Meta API.</li>
-          <li>Built support for multi-user account handling within the automation tooling.</li>
-        </ul>
-      </article>
-
-      <article class="entry">
-        <div class="entry-head">
-          <h3>Engineering Intern</h3>
-          <span class="entry-meta dim">Motorola Solutions · Jun 2022</span>
-        </div>
-        <ul>
-          <li>Gained exposure to wireless and public-safety communications systems, including Delhi Metro infrastructure.</li>
-        </ul>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="section" id="projects">
-    <h2 class="section-head"><span class="dim">~/</span>projects<span class="cursor">_</span></h2>
-    <div class="section-body">
-
-      <article class="case-study">
-        <div class="case-study-head">
-          <span class="file-tag dim">case_study.md</span>
-          <h3>Asset Management Automation</h3>
-        </div>
-        <div class="case-study-grid">
-          <div>
-            <h4 class="dim">problem</h4>
-            <p>Off-boarded employees routinely kept company devices past their return window, with no systematic way to track or follow up at scale.</p>
-          </div>
-          <div>
-            <h4 class="dim">build</h4>
-            <p>Designed an automated reminder workflow in Power Automate, paired with HTML/CSS email templates, to flag and follow up on outstanding devices.</p>
-          </div>
-          <div>
-            <h4 class="dim">outcome</h4>
-            <p>Tracked 2,000+ non-compliant devices through the workflow. Estimated ~$100K in savings from recovered and avoided device loss.</p>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-inner reveal">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1 class="hero-name">Arnav Batra</h1>
+          <p class="hero-sub">
+            I'm a triple major in Computer Science, Data Science, and Economics (Math Emphasis)
+            at UW–Madison, currently working as a Data Analyst on the Nexus digital
+            transformation program at Siemens Energy. I like turning messy operational data
+            into systems that quietly save people time — a workflow that recovered $100K in
+            hardware, a dashboard that cut reporting effort by 60%. Outside of work, I'm
+            usually at archery practice.
+          </p>
+          <div class="hero-actions">
+            <a href="mailto:Batra7@wisc.edu" class="btn btn-primary">Get in touch</a>
+            <a href="ArnavBatra_Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">View Resume</a>
+            <a href="https://github.com/TheArnavBatra" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.16.69-3.83-1.34-3.83-1.34-.52-1.31-1.26-1.66-1.26-1.66-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.66 1.23 3.31.94.1-.73.39-1.23.71-1.51-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.16a10.9 10.9 0 0 1 5.74 0c2.19-1.47 3.15-1.16 3.15-1.16.62 1.58.23 2.75.11 3.04.73.79 1.17 1.8 1.17 3.04 0 4.35-2.65 5.31-5.18 5.59.41.35.77 1.04.77 2.1 0 1.52-.01 2.74-.01 3.11 0 .3.2.66.78.55A10.97 10.97 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/batraarnav" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.27 2.38 4.27 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM3.56 20.45h3.56V9H3.56v11.45Z"/></svg>
+            </a>
           </div>
         </div>
-        <p class="stack-line dim">stack: Power Automate, HTML/CSS</p>
-      </article>
-
-      <div class="project-cards">
-        <article class="project-card">
-          <span class="file-tag dim">project.py</span>
-          <h3>Archery Analytics</h3>
-          <p>A Streamlit app for tracking and visualizing competitive archery scores and performance trends.</p>
-          <p class="stack-line dim">stack: Python, Streamlit</p>
-        </article>
-
-        <article class="project-card">
-          <span class="file-tag dim">project.tsx</span>
-          <h3>Nutrition Tracking App</h3>
-          <p>A nutrition tracker pulling food data from the USDA FoodData Central API, with a Supabase-backed FastAPI service.</p>
-          <p class="stack-line dim">stack: React, Vite, FastAPI, Supabase, USDA FoodData Central</p>
-        </article>
-
-        <article class="project-card">
-          <span class="file-tag dim">project.pbix</span>
-          <h3>IT Ticket Data Visualization</h3>
-          <p>Interactive Power BI dashboards analyzing 15,000+ IT tickets for resolution-time trends, with automated weekly/monthly reporting.</p>
-          <p class="stack-line dim">stack: Power BI, Excel</p>
-        </article>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="section" id="skills">
-    <h2 class="section-head"><span class="dim">~/</span>skills<span class="cursor">_</span></h2>
-    <div class="section-body">
-      <div class="skills-grid">
-        <div class="skill-group">
-          <h4 class="dim">languages</h4>
-          <ul class="skill-list">
-            <li>Python</li>
-            <li>Java</li>
-            <li>HTML/CSS</li>
-            <li>C</li>
-            <li>R</li>
-          </ul>
-        </div>
-        <div class="skill-group">
-          <h4 class="dim">tools / platforms</h4>
-          <ul class="skill-list">
-            <li>Power BI</li>
-            <li>Excel</li>
-            <li>SharePoint</li>
-            <li>Power Automate</li>
-            <li>Git</li>
-            <li>Bash</li>
-            <li>Tableau</li>
-            <li>Mendix</li>
-            <li>SAP S/4HANA</li>
-          </ul>
+        <div class="hero-photo">
+          <img src="photo.jpg" alt="Arnav Batra">
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ACHIEVEMENTS -->
-  <section class="section" id="achievements">
-    <h2 class="section-head"><span class="dim">~/</span>achievements<span class="cursor">_</span></h2>
-    <div class="section-body">
-      <ul class="achievements-list">
-        <li>
-          <strong>UW Archery Competitive Team</strong> <span class="dim">— 2023–present</span><br>
-          Gold medal, Spring 2023 Wisconsin Archery Alliance States. Competed in an inter-collegiate match vs. UW–Stevens Point.
-        </li>
-        <li>
-          <strong>School Archery Team, India</strong> <span class="dim">— 2018–2023</span><br>
-          Team Leader; multiple district and state medals; competed nationally.
-        </li>
-      </ul>
     </div>
   </section>
 
   <!-- EDUCATION -->
   <section class="section" id="education">
-    <h2 class="section-head"><span class="dim">~/</span>education<span class="cursor">_</span></h2>
-    <div class="section-body">
-      <p>
-        <strong>University of Wisconsin–Madison</strong><br>
-        B.S. Computer Science / Data Science / Economics (Math Emphasis)<br>
-        <span class="dim">Aug 2023 – May 2027</span>
-      </p>
+    <div class="section-inner reveal">
+      <p class="section-label">Education</p>
+      <h2 class="section-title">[University Name]</h2>
+      <p class="edu-line">[Degree / Major(s)]</p>
+      <p class="entry-meta">[Date range]</p>
     </div>
   </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="section-inner reveal">
+      <p class="section-label">Experience</p>
+      <h2 class="section-title">Where I've worked</h2>
+
+      <div class="timeline">
+
+        <article class="entry entry-current">
+          <div class="entry-marker" aria-hidden="true"></div>
+          <div class="entry-content">
+            <div class="entry-head">
+              <h3>[Role Title]</h3>
+              <span class="badge">Current</span>
+            </div>
+            <p class="entry-meta">[Company Name] · [Date range]</p>
+            <ul>
+              <li>[Placeholder — what you did, in one sentence.]</li>
+              <li>[Placeholder — another responsibility or accomplishment.]</li>
+              <li>[Placeholder — a third, if relevant.]</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="entry-marker" aria-hidden="true"></div>
+          <div class="entry-content">
+            <div class="entry-head">
+              <h3>[Role Title]</h3>
+            </div>
+            <p class="entry-meta">[Company Name] · [Date range]</p>
+            <ul>
+              <li>[Placeholder — what you did, in one sentence.]</li>
+              <li>[Placeholder — another responsibility or accomplishment.]</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="entry-marker" aria-hidden="true"></div>
+          <div class="entry-content">
+            <div class="entry-head">
+              <h3>[Role Title]</h3>
+            </div>
+            <p class="entry-meta">[Company Name] · [Date range]</p>
+            <ul>
+              <li>[Placeholder — what you did, in one sentence.]</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-inner reveal">
+      <p class="section-label">Projects</p>
+      <h2 class="section-title">What I've built</h2>
+
+      <article class="case-study">
+        <span class="case-study-tag">Case study</span>
+        <h3>[Featured Project Name]</h3>
+        <div class="case-study-grid">
+          <div>
+            <h4>Problem</h4>
+            <p>[Placeholder — what problem this project solved.]</p>
+          </div>
+          <div>
+            <h4>Build</h4>
+            <p>[Placeholder — what you actually built.]</p>
+          </div>
+          <div>
+            <h4>Outcome</h4>
+            <p>[Placeholder — the measurable result.]</p>
+          </div>
+        </div>
+        <p class="stack-line">[Tech stack]</p>
+      </article>
+
+      <div class="project-cards">
+        <article class="project-card">
+          <h3>[Project Name]</h3>
+          <p>[Placeholder — one or two sentences on what it does.]</p>
+          <p class="stack-line">[Tech stack]</p>
+        </article>
+
+        <article class="project-card">
+          <h3>[Project Name]</h3>
+          <p>[Placeholder — one or two sentences on what it does.]</p>
+          <p class="stack-line">[Tech stack]</p>
+        </article>
+
+        <article class="project-card">
+          <h3>[Project Name]</h3>
+          <p>[Placeholder — one or two sentences on what it does.]</p>
+          <p class="stack-line">[Tech stack]</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section-inner reveal">
+      <p class="section-label">Skills</p>
+      <h2 class="section-title">Toolkit</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>[Group Name]</h4>
+          <ul class="skill-list">
+            <li>[Skill]</li>
+            <li>[Skill]</li>
+            <li>[Skill]</li>
+            <li>[Skill]</li>
+            <li>[Skill]</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>[Group Name]</h4>
+          <ul class="skill-list">
+            <li>[Skill]</li>
+            <li>[Skill]</li>
+            <li>[Skill]</li>
+            <li>[Skill]</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
 </main>
 
 <!-- CONTACT / FOOTER -->
 <footer class="footer" id="contact">
   <div class="footer-inner">
-    <p class="dim">~/contact $</p>
+    <h2 class="footer-title">Let's talk</h2>
+    <p class="footer-sub">Open to data, analytics, and software roles — reach out any time.</p>
     <div class="footer-links">
-      <a href="resume.pdf" target="_blank" rel="noopener">cat resume.pdf</a>
-      <a href="https://www.linkedin.com/in/arnavbatra" target="_blank" rel="noopener">open linkedin</a>
-      <a href="mailto:Batra7@wisc.edu">mail Batra7@wisc.edu</a>
+      <a href="mailto:Batra7@wisc.edu" class="btn btn-primary">Batra7@wisc.edu</a>
+      <a href="https://www.linkedin.com/in/batraarnav" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
     </div>
-    <p class="dim footer-end">© <span id="year"></span> Arnav Batra — built with plain HTML/CSS/JS<span class="cursor">_</span></p>
+    <p class="footer-end">© <span id="year"></span> Arnav Batra</p>
   </div>
 </footer>
 
