@@ -244,43 +244,81 @@
       <p class="section-label">Projects</p>
       <h2 class="section-title">What I've built</h2>
 
-      <article class="case-study">
-        <span class="case-study-tag">Case study</span>
-        <h3>[Featured Project Name]</h3>
-        <div class="case-study-grid">
-          <div>
-            <h4>Problem</h4>
-            <p>[Placeholder — what problem this project solved.]</p>
-          </div>
-          <div>
-            <h4>Build</h4>
-            <p>[Placeholder — what you actually built.]</p>
-          </div>
-          <div>
-            <h4>Outcome</h4>
-            <p>[Placeholder — the measurable result.]</p>
-          </div>
-        </div>
-        <p class="stack-line">[Tech stack]</p>
-      </article>
-
       <div class="project-cards">
-        <article class="project-card">
-          <h3>[Project Name]</h3>
-          <p>[Placeholder — one or two sentences on what it does.]</p>
-          <p class="stack-line">[Tech stack]</p>
+        <article class="project-card project-card-wide">
+          <div class="project-card-head">
+            <span class="entry-logo">
+              <img src="icon-192.png" alt="NutriLens logo">
+            </span>
+            <h3>NutriLens</h3>
+          </div>
+          <div class="project-card-grid">
+            <div>
+              <h4>Problem</h4>
+              <p>Manually logging every food item is tedious enough that most people abandon nutrition trackers within a few days — the friction is in the data entry, not the tracking itself.</p>
+            </div>
+            <div>
+              <h4>Build</h4>
+              <p>A Progressive Web App that cuts logging down to a barcode scan or a photo of a nutrition label. Barcode scans pull from Open Food Facts and USDA FoodData Central; for unscannable products, a vision LLM (Groq's Llama 4 Scout) reads a photographed label and converts the values into structured per-100g data automatically. Tracks macros, micronutrients, and daily goals, and installs like a native app via service worker caching.</p>
+            </div>
+            <div>
+              <h4>Outcome</h4>
+              <p>Turned food logging into a single scan or photo instead of manual search-and-entry.</p>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://thearnavbatra.github.io/NutriLens/" target="_blank" rel="noopener">Live demo</a>
+            <a href="https://github.com/TheArnavBatra/NutriLens" target="_blank" rel="noopener">GitHub</a>
+          </div>
+          <p class="stack-line">JavaScript · HTML/CSS · USDA FoodData Central API · Open Food Facts API · Groq Vision API · Service Worker/PWA · GitHub Pages</p>
         </article>
 
-        <article class="project-card">
-          <h3>[Project Name]</h3>
-          <p>[Placeholder — one or two sentences on what it does.]</p>
-          <p class="stack-line">[Tech stack]</p>
+        <article class="project-card project-card-wide">
+          <div class="project-card-head">
+            <span class="entry-logo">
+              <img src="amgmn-logo.png" alt="">
+            </span>
+            <h3>Asset Management Automation - Siemens Energy</h3>
+          </div>
+          <div class="project-card-grid">
+            <div>
+              <h4>Problem</h4>
+              <p>Off-boarded employees routinely kept company devices past their return window, with no systematic way to track or follow up at scale.</p>
+            </div>
+            <div>
+              <h4>Build</h4>
+              <p>Designed and built an automated reminder workflow in Power Automate, paired with custom HTML/CSS email templates, to flag and follow up on outstanding devices.</p>
+            </div>
+            <div>
+              <h4>Outcome</h4>
+              <p>Tracked 2,000+ non-compliant devices through the workflow, with an estimated ~$100K in savings from recovered and avoided device loss.</p>
+            </div>
+          </div>
+          <p class="stack-line">Power Automate · HTML/CSS · Excel</p>
         </article>
 
-        <article class="project-card">
-          <h3>[Project Name]</h3>
-          <p>[Placeholder — one or two sentences on what it does.]</p>
-          <p class="stack-line">[Tech stack]</p>
+        <article class="project-card project-card-wide">
+          <div class="project-card-head">
+            <span class="entry-logo">
+              <img src="it-ticket-icon.svg" alt="">
+            </span>
+            <h3>IT Ticket Data Visualization - Siemens Energy</h3>
+          </div>
+          <div class="project-card-grid">
+            <div>
+              <h4>Problem</h4>
+              <p>IT leadership had no easy way to see resolution-time trends across tickets, and weekly/monthly reporting was compiled by hand.</p>
+            </div>
+            <div>
+              <h4>Build</h4>
+              <p>Developed interactive Power BI dashboards analyzing 15K+ IT tickets, with automated weekly and monthly reporting for leadership.</p>
+            </div>
+            <div>
+              <h4>Outcome</h4>
+              <p>Cut manual reporting effort by 60%+, improved SLA compliance, and accelerated ticket resolution.</p>
+            </div>
+          </div>
+          <p class="stack-line">Power BI · Excel</p>
         </article>
       </div>
     </div>
@@ -293,22 +331,28 @@
       <h2 class="section-title">Toolkit</h2>
       <div class="skills-grid">
         <div class="skill-group">
-          <h4>[Group Name]</h4>
+          <h4>Languages</h4>
           <ul class="skill-list">
-            <li>[Skill]</li>
-            <li>[Skill]</li>
-            <li>[Skill]</li>
-            <li>[Skill]</li>
-            <li>[Skill]</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>HTML/CSS</li>
+            <li>C</li>
+            <li>R</li>
+            <li>Stata</li>
           </ul>
         </div>
         <div class="skill-group">
-          <h4>[Group Name]</h4>
+          <h4>Tools &amp; Platforms</h4>
           <ul class="skill-list">
-            <li>[Skill]</li>
-            <li>[Skill]</li>
-            <li>[Skill]</li>
-            <li>[Skill]</li>
+            <li>Git</li>
+            <li>Bash</li>
+            <li>Power BI</li>
+            <li>Excel</li>
+            <li>SharePoint</li>
+            <li>Power Automate</li>
+            <li>Tableau</li>
+            <li>Mendix</li>
           </ul>
         </div>
       </div>
