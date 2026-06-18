@@ -13,6 +13,8 @@
 <noscript>
   <style>
     .reveal { opacity: 1 !important; transform: none !important; }
+    .nav-toggle { display: none !important; }
+    .topnav { display: flex !important; position: static !important; flex-wrap: wrap; }
   </style>
 </noscript>
 </head>
@@ -21,13 +23,16 @@
 <header class="topbar">
   <div class="topbar-inner">
     <a href="#top" class="logo">AB</a>
-    <nav class="topnav" aria-label="Sections">
+    <nav class="topnav" aria-label="Sections" id="topnav">
       <a href="#education">Education</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
     </nav>
     <a href="ArnavBatra_Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost btn-small">Resume</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="topnav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
@@ -44,7 +49,7 @@
             I'm Arnav, a senior at UW–Madison, triple majoring in Computer Science, Data
             Science, and Economics and interning at Siemens Energy as a Data Analyst. I build
             data-driven tools and applications across a range of domains, and I'm working
-            toward a career in data and software.
+            towards a career in data and software.
           </p>
           <div class="hero-actions">
             <a href="mailto:Batra7@wisc.edu" class="btn btn-primary">Get in touch</a>

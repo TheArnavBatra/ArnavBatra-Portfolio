@@ -192,6 +192,28 @@ strong {
   color: var(--text);
 }
 
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 16px;
+  height: 1.5px;
+  margin: 0 auto;
+  background: var(--text-dim);
+}
+
 /* ---------- hero ---------- */
 
 .hero {
@@ -801,6 +823,32 @@ strong {
 @media (max-width: 720px) {
   .topnav {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: var(--bg-raised);
+    border-bottom: 1px solid var(--border);
+    padding: 8px 24px 16px;
+  }
+
+  .topnav.is-open {
+    display: flex;
+  }
+
+  .topnav a {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .topnav a:last-child {
+    border-bottom: none;
+  }
+
+  .nav-toggle {
+    display: flex;
   }
 
   .hero-grid {

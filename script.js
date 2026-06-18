@@ -1,6 +1,23 @@
 (function () {
   "use strict";
 
+  var navToggle = document.getElementById("navToggle");
+  var topnav = document.getElementById("topnav");
+
+  if (navToggle && topnav) {
+    navToggle.addEventListener("click", function () {
+      var isOpen = topnav.classList.toggle("is-open");
+      navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+
+    topnav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        topnav.classList.remove("is-open");
+        navToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
   var yearEl = document.getElementById("year");
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
